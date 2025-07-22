@@ -1,0 +1,760 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+
+body {
+    background-color: #F8F8FF;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FAE9EC;
+    height: 3rem;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+.nav-bar .title h1 {
+    position: absolute;
+    font-family: 'Marcellus', serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+    left: 2rem;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: .8rem;
+    padding-top: .4rem;
+}
+
+.options-list img {
+    height: 1.2rem;
+    width: auto;
+}
+
+.options-list {
+    position: relative;
+    right: 3rem;
+}
+
+
+
+/*Hero section*/
+
+.hero {
+    background-image: url(./assets/background-3.jpg);
+    background-size: cover; 
+    background-position: center;
+
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.text-hero {
+    margin-top: 5rem;
+    background-color: rgba(221, 218, 218, 0.176);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 90%;
+    height: 35%;
+}
+
+.text-hero h1 {
+    font-size: 3rem;
+    color: #4B2C3C;
+    font-weight: 400;
+
+}
+
+.text-hero p {
+    color: #5A5A5A;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #ff69b4; 
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff85c1; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+    color: #333333;
+}
+
+/* Our Services section */
+
+.our-services {
+    background-color: #FAE9EC;
+    height: 115vh;
+    overflow-x: hidden;
+
+}
+
+.our-services h1 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: .5rem;
+}
+
+.service-item-row1, .service-item-row2 {
+    display: flex;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.service-item img {
+    height: 16rem;
+    width: 100%; /* Force full width of container */
+    object-fit: cover; /* Crop if necessary, but keep the aspect ratio */
+    border-radius: 1rem;
+    display: block;
+  }
+
+.service-item {
+    width: 100%; /* Or a fixed value like 300px */
+    max-width: 300px;
+    text-align: center;
+}
+  
+.services h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: #4B4B4B;
+    font-weight: 300;
+    letter-spacing: .1rem;
+}
+
+.services h3 {
+    font-size: 1rem;
+    text-align: center;
+    color: #4B4B4B;
+    font-weight: 400;
+}
+
+.services p {
+    font-size: .8rem;
+    font-weight: 200;
+}
+
+/* Pink painting section */
+
+.colors-section {
+    height: 100vh;
+    width: 100%;
+}
+
+.colors-picture {
+    width: 100%;
+    background-image: url(./assets/painting-2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70%;
+}
+
+.colors-text {
+    height: 30%;
+}
+
+.colors-section h1 {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: .5rem;
+    padding-bottom: 1rem;
+}
+
+.colors-section p {
+    text-align: center;
+    padding: 1rem;
+    font-size: .8rem;
+    font-weight: 200;
+    margin: 0 2rem;
+}
+
+.colors-text {
+    background-color: #FDF6F0;
+}
+
+/* Works done section */
+
+.works-done {
+    background-color: #FAE9EC;
+    height: 110vh;
+    width: 100%;
+}
+
+.works-title h1 {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    letter-spacing: .5rem;
+}
+
+.works-title p {
+    text-align: center;
+    padding: 2rem;
+    font-size: .8rem;
+    font-weight: 100;
+    margin: 0 2rem;
+    color: #5A5A5A;
+}
+
+.works-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.work-item img {
+    width: 100%;
+    height: 13rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+/* Reviews section */
+
+.reviews {
+    background-color: #FDF6F0;
+    height: 100vh;
+    width: 100%;
+}
+
+.reviews h1 {
+    padding: 2rem 1rem;
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: .3rem;
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.review-item {
+    border: 1px solid #d1d1d1;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: #FAE9EC;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.review-name {
+    font-size: 1rem;
+    font-weight: 200;
+    padding-top: 0.5rem;
+}
+
+.review-date {
+    font-size: .5rem;
+    font-weight: 100;
+    color: #5A5A5A;
+}
+
+.review-stars {
+    color: #A64253;
+    font-size: 1.2rem;
+}
+
+.review-text {
+    font-size: .6rem;
+    font-weight: 200;
+    color: #4B4B4B;
+    padding: 0 .5rem;
+}
+
+/* Contact section */
+
+.contact {
+    background-color: #A64253;
+    height: 120vh;
+    
+}
+
+.contact h1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    padding-top: 2rem;
+}
+
+.contact p {
+    padding: .5rem 0;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.contact a {
+    color: #FFB6C1;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.contact-numbers h2 {
+    display: none;
+}
+
+.contact-numbers h3 {
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: .1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+
+
+.map-container {
+    display: flex;
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+
+.location-map {
+    width: 90%;
+    height: 25rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.contact-container p {
+    text-align: center;
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+.contact-container p {
+    color: #FFB6C1;
+}
+
+.contact-map p {
+    padding-top: 2rem;
+    font-size: 1rem;
+    color: #FFFFFF;
+  }
+
+.contact-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-map .button {
+    width: 100%;
+    background-color: #FDF6F0;
+    color: #A64253;
+    font-weight: 500;
+}
+
+.contact-map .button:hover {
+    background-color: #A64253;
+    color: #FDF6F0;
+}
+
+.contact-numbers .gratis {
+    color: white;
+  }
+
+
+/* Desktop styles */
+
+@media screen and (min-width: 1024px) {
+    .nav-bar {
+        display: flex;
+        justify-content: space-around;
+        background-color: #D9A5B3;
+        height: 5rem;
+        width: 100%;
+        position: relative;
+    }
+
+    .nav-bar .title {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-bar .title h1 {
+        position: absolute;
+        font-size: 3rem;
+        left: 5rem;
+    }
+
+    .options-list img {
+        height: 3rem;
+        width: auto;
+    }
+    
+    .options-list {
+        position: relative;
+        right: -32rem;
+    }
+
+    /* Styles for desktop screens */
+    .hero {
+        background-image: url(./assets/backgroundnails.jpg);
+        background-size: cover; /* fill the section */
+        background-position: right;
+    
+        height: 80vh;
+        width: 100%;
+        position: relative;
+    }
+
+    .text-hero {
+        position: absolute; 
+        top: 20rem;  
+        left: 2rem;
+
+        background-color: rgba(173, 173, 173, 0.176);
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 35%;
+        height: 45%;
+
+    }
+
+    .text-hero h1 {
+        font-size: 5rem;
+        color: #4B2C3C;
+        font-weight: 400;
+
+    }
+    
+    .text-hero p {
+        color: #5A5A5A;
+        font-size: 3rem;
+        font-weight: 200;
+    }
+
+    .button {
+        margin-top: 1rem;
+        padding: 1.8rem 4.5rem;
+        background-color: #ff69b4; 
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 3rem;
+    }
+  
+    /* Our Services section */
+
+    .our-services {
+        height: 115vh;
+    }
+
+    .our-services h1 {
+        font-size: 5rem;
+        padding-bottom: 0rem;
+    }
+
+    .services {
+        display: flex;
+    }
+
+    .service-item-row1, .service-item-row2 {
+        display: flex;
+        margin: 5rem;
+        gap: 5rem;
+    }
+
+    .service-item img {
+        height: 65rem;
+        width: 100%; /* Force full width of container */
+        object-fit: cover; /* Crop if necessary, but keep the aspect ratio */
+        border-radius: 1rem;
+        display: block;
+    }
+
+    .service-item {
+        width: 100%; /* Or a fixed value like 300px */
+        max-width: 40rem;
+    }
+
+    .services h2 {
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .services h3 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .services p {
+        font-size: 2rem;
+        
+    }
+
+    /* Pink painting section */
+
+    .colors-picture {
+        width: 50%;
+        height: 100%;
+    }
+
+    .colors-section {
+        display: flex;
+    }
+
+    .colors-text {
+        width: 50%;
+        height: 100%;
+    }
+
+    .colors-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .colors-texts h1 {
+        font-size: 5rem;
+        font-weight: 100;
+    }
+
+    .colors-texts p {
+        font-size: 1.7rem;
+        font-weight: 100;
+    }
+
+    .colors-texts {
+        width: 50%;
+    }
+
+    /* Works done section */
+
+    .works-done {
+        height: 135vh;
+    }
+
+    .works-title h1 {
+        text-align: center;
+        padding-top: 4rem;
+        font-size: 4rem;
+        font-weight: 100;
+        letter-spacing: .5rem;
+    }
+
+    .works-title p {
+        font-size: 2rem;
+    }
+
+    .works-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+        margin: 2rem;
+        margin-top: 5rem;
+    }
+    .work-item img {
+        width: 100%;
+        height: 50rem;
+        object-fit: cover;
+        border-radius: 3rem;
+    }
+
+    /* Reviews section */
+
+    .reviews-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 1.5rem;
+        padding: 1rem;
+        justify-content: center;
+        place-items: center;
+    }
+    
+    .reviews h1 {
+        font-size: 4rem;
+        padding: 3rem;
+    }
+    
+    .review-item {
+        border: 1px solid #d1d1d1;
+        border-radius: 1rem;
+        text-align: center;
+        width: 55rem;
+        height: 35rem;
+        margin: 3rem;
+    }
+
+    .review-name {
+        font-size: 4rem;
+        font-weight: 200;
+        padding-top: 0.5rem;
+    }
+    
+    .review-date {
+        font-size: 1.5rem;
+        font-weight: 100;
+        color: #5A5A5A;
+    }
+    
+    .review-stars {
+        color: #A64253;
+        font-size: 3rem;
+    }
+    
+    .review-text {
+        font-size: 2rem;
+        font-weight: 200;
+        color: #4B4B4B;
+        padding: 0 5rem;
+    }
+
+    /* Contact section */
+    .contact {
+        height: 60vh;
+    }
+
+    .contact-map h1 {
+        font-size: 2rem;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+
+    /* Left section */
+    .contact-numbers {
+        flex: 1;
+        min-width: 250px;
+        color: #fff;
+        margin-top: 2rem;
+      }
+      
+      /* Right section */
+      .contact-map {
+        flex: 2;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-numbers h2,
+      .contact-numbers h3 {
+        color: #fff;
+        text-align: center;
+        font-weight: 200;
+        letter-spacing: 0.1rem;
+        padding: 2rem 0 1rem;
+        font-size: 3rem;
+        display: block;
+      }
+      
+
+
+      
+      .location-map {
+        width: 100%;
+        height: 300px;
+        border: none;
+        border-radius: 1rem;
+      }
+      .contact-numbers p {
+        font-size: 2rem;
+        font-weight: 100;
+      }
+
+      .contact-numbers a {
+        font-weight: 200;
+      }
+
+      .contact-map h1, .contact h1 {
+        display: none;
+      }
+
+      /* The map container*/
+      .map-container {
+        width: 100%;
+        height: 45rem;
+        max-width: 70%; 
+      }
+
+      /* The map */
+      .location-map {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 1rem;
+    }
+
+    .contact-map .button {
+        width: 90%;
+        background-color: #FDF6F0;
+        color: #A64253;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin: 2rem;
+    }
+
+    .contact-map {
+        display: flex;
+    }
+}
