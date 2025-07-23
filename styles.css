@@ -443,7 +443,7 @@ body {
         display: flex;
         justify-content: space-around;
         background-color: #FAE9EC;
-        height: 3rem;
+        height: 1.5rem;
         width: 100%;
         position: relative;
     }
@@ -478,7 +478,7 @@ body {
 
     .text-hero {
         position: absolute; 
-        top: 10rem;  
+        top: 12rem;  
         left: 2rem;
 
         background-color: rgba(173, 173, 173, 0.176);
@@ -505,13 +505,13 @@ body {
 
     .button {
         margin-top: 1rem;
-        padding: 1.8rem 4.5rem;
+        padding: 1rem 2.5rem;
         background-color: #ff69b4; 
         color: white;
         border: none;
         border-radius: 1rem;
         cursor: pointer;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
   
     /* Our Services section */
@@ -635,7 +635,7 @@ body {
     }
     .work-item img {
         width: 100%;
-        height: 15rem;
+        height: 20rem;
         object-fit: cover;
         border-radius: 3rem;
     }
@@ -649,6 +649,7 @@ body {
         padding: .5rem;
         justify-content: center;
         place-items: center;
+        margin: 2rem;
     }
     
     .reviews h1 {
@@ -660,7 +661,7 @@ body {
         border: 1px solid #d1d1d1;
         border-radius: 1rem;
         text-align: center;
-        width: 15rem;
+        width: 20rem;
         height: auto;
         padding-bottom: 1rem;
         margin: 1rem;
