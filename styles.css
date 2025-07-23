@@ -443,7 +443,7 @@ body {
         display: flex;
         justify-content: space-around;
         background-color: #FAE9EC;
-        height: 5rem;
+        height: 3rem;
         width: 100%;
         position: relative;
     }
@@ -455,19 +455,14 @@ body {
 
     .nav-bar .title h1 {
         position: absolute;
-        font-size: 3rem;
+        font-size: 1rem;
         left: 5rem;
     }
 
     .options-list img {
-        height: 3rem;
-        width: auto;
+        margin-left: 45rem;
     }
     
-    .options-list {
-        position: relative;
-        right: -32rem;
-    }
 
     /* Styles for desktop screens */
     .hero {
@@ -483,19 +478,20 @@ body {
 
     .text-hero {
         position: absolute; 
-        top: 20rem;  
+        top: 10rem;  
         left: 2rem;
 
         background-color: rgba(173, 173, 173, 0.176);
         padding: 1rem;
         border-radius: 1rem;
         width: 35%;
-        height: 45%;
+        height: auto;
+        padding-bottom: 1rem;
 
     }
 
     .text-hero h1 {
-        font-size: 5rem;
+        font-size: 2rem;
         color: #4B2C3C;
         font-weight: 400;
 
@@ -503,7 +499,7 @@ body {
     
     .text-hero p {
         color: #5A5A5A;
-        font-size: 3rem;
+        font-size: 1.5rem;
         font-weight: 200;
     }
 
@@ -515,18 +511,21 @@ body {
         border: none;
         border-radius: 1rem;
         cursor: pointer;
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
   
     /* Our Services section */
 
     .our-services {
-        height: 115vh;
+        min-height: 100vh;
+        overflow-x: hidden;
+        overflow-y: visible;
+        padding-bottom: 2rem; 
     }
 
     .our-services h1 {
-        font-size: 5rem;
-        padding-bottom: 0rem;
+        font-size: 2rem;
+        padding-bottom: 2rem;
     }
 
     .services {
@@ -535,12 +534,12 @@ body {
 
     .service-item-row1, .service-item-row2 {
         display: flex;
-        margin: 5rem;
-        gap: 5rem;
+        margin: 1rem;
+        gap: 2rem;
     }
 
     .service-item img {
-        height: 65rem;
+        height: 25rem;
         width: 100%; /* Force full width of container */
         object-fit: cover; /* Crop if necessary, but keep the aspect ratio */
         border-radius: 1rem;
@@ -553,18 +552,18 @@ body {
     }
 
     .services h2 {
-        font-size: 4rem;
+        font-size: 2rem;
         text-align: center;
         margin-top: 1rem;
     }
 
     .services h3 {
-        font-size: 3rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 
     .services p {
-        font-size: 2rem;
+        font-size: 1rem;
         
     }
 
@@ -594,46 +593,49 @@ body {
     }
 
     .colors-texts h1 {
-        font-size: 5rem;
+        font-size: 2rem;
         font-weight: 100;
     }
 
     .colors-texts p {
-        font-size: 1.7rem;
+        font-size: .9rem;
         font-weight: 100;
     }
 
     .colors-texts {
-        width: 50%;
+        width: 70%;
     }
 
     /* Works done section */
 
     .works-done {
-        height: 135vh;
+        min-height: 100vh;
+        overflow-x: hidden;
+        overflow-y: visible;
+        padding-bottom: 2rem; 
     }
 
     .works-title h1 {
         text-align: center;
         padding-top: 4rem;
-        font-size: 4rem;
+        font-size: 2rem;
         font-weight: 100;
         letter-spacing: .5rem;
     }
 
     .works-title p {
-        font-size: 2rem;
+        font-size: .9rem;
     }
 
     .works-container {
         grid-template-columns: repeat(3, 1fr);
-        gap: 5rem;
+        gap: 3rem;
         margin: 2rem;
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
     .work-item img {
         width: 100%;
-        height: 50rem;
+        height: 15rem;
         object-fit: cover;
         border-radius: 3rem;
     }
@@ -643,57 +645,60 @@ body {
     .reviews-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
-        gap: 1.5rem;
-        padding: 1rem;
+        gap: .1rem;
+        padding: .5rem;
         justify-content: center;
         place-items: center;
     }
     
     .reviews h1 {
-        font-size: 4rem;
-        padding: 3rem;
+        font-size: 2rem;
+        padding: 2rem;
     }
     
     .review-item {
         border: 1px solid #d1d1d1;
         border-radius: 1rem;
         text-align: center;
-        width: 55rem;
-        height: 35rem;
-        margin: 3rem;
+        width: 15rem;
+        height: auto;
+        padding-bottom: 1rem;
+        margin: 1rem;
     }
 
     .review-name {
-        font-size: 4rem;
+        font-size: 1.5rem;
         font-weight: 200;
-        padding-top: 0.5rem;
     }
     
     .review-date {
-        font-size: 1.5rem;
+        font-size: .8rem;
         font-weight: 100;
         color: #5A5A5A;
     }
     
     .review-stars {
         color: #A64253;
-        font-size: 3rem;
+        font-size: 1rem;
     }
     
     .review-text {
-        font-size: 2rem;
+        font-size: .8rem;
         font-weight: 200;
         color: #4B4B4B;
-        padding: 0 5rem;
+        padding: 0 1rem;
     }
 
     /* Contact section */
     .contact {
         min-height: 40vh;
+        overflow-x: hidden;
+        overflow-y: visible;
+        padding-bottom: 2rem; 
     }
 
     .contact-map h1 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .contact-container {
@@ -728,7 +733,7 @@ body {
         font-weight: 200;
         letter-spacing: 0.1rem;
         padding: 2rem 0 1rem;
-        font-size: 3rem;
+        font-size: 1.5rem;
         display: block;
       }
       
@@ -742,7 +747,7 @@ body {
         border-radius: 1rem;
       }
       .contact-numbers p {
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: 100;
       }
 
@@ -757,8 +762,9 @@ body {
       /* The map container*/
       .map-container {
         width: 100%;
-        height: 45rem;
+        height: 25rem;
         max-width: 70%; 
+        margin-top: 5rem;
       }
 
       /* The map */
@@ -770,12 +776,16 @@ body {
     }
 
     .contact-map .button {
-        width: 90%;
+        width: 85%;
         background-color: #FDF6F0;
         color: #A64253;
         font-weight: 500;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin: 2rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .contact-map {
