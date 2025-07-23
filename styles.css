@@ -20,7 +20,6 @@ body {
     width: 100%;
     position: relative;
     overflow-x: hidden;
-
 }
 
 .nav-bar .title h1 {
@@ -55,13 +54,19 @@ body {
 
 /*Hero section*/
 
+.hero-background {
+    background-color: #FAE9EC;
+}
+
 .hero {
     background-image: url(./assets/background-3.jpg);
     background-size: cover; 
     background-position: center;
 
+
+
     height: 100vh;
-    width: 100%;
+    width: 96%;
 
     display: flex;
     align-items: flex-start;
@@ -69,6 +74,14 @@ body {
     position: relative;
     text-align: center;
     color: white;
+
+    margin: .5rem auto;
+
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    overflow: hidden;
 }
 
 .text-hero {
@@ -77,7 +90,7 @@ body {
     padding: 1rem;
     border-radius: 1rem;
     width: 90%;
-    height: 35%;
+    height: auto;
 }
 
 .text-hero h1 {
@@ -116,9 +129,10 @@ body {
 
 .our-services {
     background-color: #FAE9EC;
-    height: 115vh;
+    min-height: 100vh;
     overflow-x: hidden;
-
+    overflow-y: visible; /* Ensure it grows instead of scrolling */
+    padding-bottom: 2rem; 
 }
 
 .our-services h1 {
@@ -174,8 +188,9 @@ body {
 /* Pink painting section */
 
 .colors-section {
-    height: 100vh;
     width: 100%;
+    min-height: 100vh;
+    background-color: #FDF6F0;
 }
 
 .colors-picture {
@@ -183,11 +198,11 @@ body {
     background-image: url(./assets/painting-2.jpg);
     background-size: cover;
     background-position: center;
-    height: 70%;
+    height: 70vh;
 }
 
 .colors-text {
-    height: 30%;
+    padding-bottom: 2rem;
 }
 
 .colors-section h1 {
@@ -215,8 +230,10 @@ body {
 
 .works-done {
     background-color: #FAE9EC;
-    height: 110vh;
-    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: visible; /* Ensure it grows instead of scrolling */
+    padding-bottom: 2rem; 
 }
 
 .works-title h1 {
@@ -254,8 +271,10 @@ body {
 
 .reviews {
     background-color: #FDF6F0;
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: visible; /* Ensure it grows instead of scrolling */
+    padding-bottom: 2rem; 
 }
 
 .reviews h1 {
@@ -311,8 +330,10 @@ body {
 
 .contact {
     background-color: #A64253;
-    height: 120vh;
-    
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: visible; /* Ensure it grows instead of scrolling */
+    padding-bottom: 2rem; 
 }
 
 .contact h1 {
@@ -421,7 +442,7 @@ body {
     .nav-bar {
         display: flex;
         justify-content: space-around;
-        background-color: #D9A5B3;
+        background-color: #FAE9EC;
         height: 5rem;
         width: 100%;
         position: relative;
@@ -455,8 +476,9 @@ body {
         background-position: right;
     
         height: 80vh;
-        width: 100%;
+        width: 98%;
         position: relative;
+        margin: 1rem auto;
     }
 
     .text-hero {
@@ -548,14 +570,16 @@ body {
 
     /* Pink painting section */
 
+    .colors-section {
+        display: flex;
+        height: 100vh;
+    }
+
     .colors-picture {
         width: 50%;
         height: 100%;
     }
 
-    .colors-section {
-        display: flex;
-    }
 
     .colors-text {
         width: 50%;
@@ -665,7 +689,7 @@ body {
 
     /* Contact section */
     .contact {
-        height: 60vh;
+        min-height: 40vh;
     }
 
     .contact-map h1 {
