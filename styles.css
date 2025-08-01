@@ -11,15 +11,46 @@ body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
+.sticky-note {
+    position: fixed;   /* ✅ fixed keeps it in place during scroll */
+    right: 1rem;       /* Distance from the right edge */
+    padding: 1rem;
+    width: 5rem;
+    height: 5rem;
+    z-index: 999;
+    text-align: center;
+    overflow: hidden;
+}
+
+.sticky-note img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.sticky-note p {
+    font-size: 0.5rem;
+    color: #f8f8f8;
+    text-align: center;
+    margin: 0;
+    width: 8rem;
+    text-decoration: none;
+}
+  
+.sticky-note p a {
+    text-decoration: none;
+    color: #f8f8f8;
+}
+  
+  
 
 .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #FAE9EC;
-    height: 3rem;
-    width: 100%;
-    position: relative;
-    overflow-x: hidden;
+  top: 0; /* required for sticky positioning */
+  display: flex;
+  justify-content: space-between;
+  background-color: #FAE9EC;
+  height: 3rem;
+  width: 100%;
+  z-index: 1000; /* optional: keep it on top */
 }
 
 .nav-bar .title h1 {
@@ -195,7 +226,7 @@ body {
 
 .colors-picture {
     width: 100%;
-    background-image: url(./assets/painting-2.jpg);
+    background-image: url(./assets/organic.JPG);
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -432,8 +463,24 @@ body {
 }
 
 .contact-numbers .gratis {
+    margin: 1rem;
+
     color: white;
-  }
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-bold-color {
+    font-weight: bold;
+    color: #ff85c1; /* Replace with your desired color */
+}
+
+.contact-numbers .adriatico {
+    font-size: 1rem;
+    padding: .5;
+}
+  
 
 
 /* Desktop styles */
